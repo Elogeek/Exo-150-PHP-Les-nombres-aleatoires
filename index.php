@@ -5,7 +5,8 @@
  */
 
 // TODO Votre code ici.
-
+$numberRandom = rand(0, 50);
+echo "Mon nombre est :  $numberRandom <br>";
 
 
 /**
@@ -13,7 +14,8 @@
  */
 
 // TODO Votre code ici.
-
+$number = rand(50,getrandmax());
+echo "Mon new nombre est : $number <br>";
 
 /**
  * 3. Générez un nombre aléatoire compris entre 0 et 50
@@ -22,7 +24,14 @@
  */
 
 // TODO Votre code ici.
+$numberBis = rand(0,50);
 
+if($numberBis <= 25) {
+    echo "Vous avez gagné !";
+}
+else {
+    echo "Vous avez perdu !";
+}
 
 /**
  * 4. Créez une fonction qui génère un nombre aléatoire compris entre $max et $min ( paramètres ).
@@ -31,6 +40,14 @@
  */
 
 // TODO Votre code ici.
+function recursive($n1,$n2) {
+    $n1 = 0;
+    $n2 = 100;
+    $titi = rand($n1,$n2);
+    echo "mon nombre est : $titi <br>";
+    recursive($n1,$n2);
+}
+
 
 
 
